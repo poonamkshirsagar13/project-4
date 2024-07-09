@@ -1,0 +1,36 @@
+<!-- 
+<p>{{productDetail?.id}}</p>
+<p>{{productDetail?.department}}</p>
+<p>{{productDetail?.product}}</p>
+<p>{{productDetail?.productName}}</p>
+<p>{{productDetail?.productDescription}}</p>
+<p>{{productDetail?.price}}</p>
+<p>{{productDetail?.description}}</p>
+<p>{{productDetail?.productImage}}</p> -->
+
+
+<div class="card">
+  <div class="row">
+    <div class="col-sm-2" style="padding: 2px;">
+      <img src="{{productDetail?.productImage}}" class="card-img-top h-100" alt="...">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-3" style="padding: 2px;"><img src="{{productDetail?.productImage}}" class="card-img-top h-100" alt="..."></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+      <div class="card-body">
+        <h5 class="card-title">{{productDetail?.product}}</h5>
+        <p class="card-text">{{productDetail?.productDescription}}</p>
+        <p class="card-text">{{productDetail?.description}}</p>
+        <p class="card-text" style="font-size: xx-large;" >${{productDetail?.price}}</p>
+        <button class="btn btn-primary " (click)="addCart()">Add to cart</button>
+        <button class ="btn btn-danger" style="margin-left: 20px;" >Deal </button>
+        <button class="btn btn-success" style="margin-left: 20px;" (click)="buy()">Buy</button>
+      </div>
+     
+    </div>
+
+
+  </div>
+</div>
+

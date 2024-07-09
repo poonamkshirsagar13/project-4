@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row container-bl col-md-12" >
+        <div class="col-md-3">
+            <label>{{input.label}}</label>
+        </div>
+        <div class="col-md-3" >
+            <div *ngIf="input.type !== 'file'">
+                <input [type]="input.type" [placeholder]="input.placeholder" [formControl]="control"/>
+            </div>
+            <div *ngIf="input.type === 'file'">
+                <input [type]="input.type" [placeholder]="input.placeholder" [formControl]="control" (change)="onUpload($event)" multiple />
+            </div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">&nbsp;</div>
+        <app-std-error [control]="control" ></app-std-error>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+.header{
+    width:100%;
+    /* border: solid salmon 1px; */
+    background-color:aquamarine;
+}
+.inline-style{
+    display: inline;
+    margin: 5px;
+}
+.menu{
+    margin: 2px;
+    color:blueviolet;
+}
+.menu:hover{
+    color:brown;
+    text-decoration: underline;
+    cursor:grab;
+}
+
+.isClicked {
+    background-color:bisque;
+}
+
+.cart:hover{
+    color:darkmagenta;
+    text-decoration: underline;
+    cursor:grab;
+}
+
+
+    

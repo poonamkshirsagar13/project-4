@@ -1,0 +1,34 @@
+<div class="header">
+    <div class="row" style="width: 100%;margin-left: 0px;">
+        <div class="col-md-10" >
+            <marquee>
+                <span>Celebrate Adhik Maas Get Flat 50% Off On Making Charges Of Silver Payal,
+                 Anklets and Toerings,10% Off On Gold Jewellery 5% Off On Diamond Jewellery.
+                  Rs.500 Discount On First Purchase, Use Coupon "WELCOME" *T &amp; C Apply
+                </span>
+            </marquee>
+        </div>
+        <div class="col-md-2"style="color:blue;text-decoration:aqua ;">Inquiry|call-1111111111</div>
+    </div>
+    <div class="row" style="width: 100%;margin-left: 0px">
+        <div class="col-md-1"><img style="width:50px;height: 50px;" src="/assets/123.jpg"></div>
+        <div class="col-md-7 inline-style" > 
+            <div class="inline-style" *ngFor="let menu of menuList"  >
+                <div class="inline-style menu " [class.isClicked]="menu.isClick" (click)="navigate(menu.path)" >{{menu.name}}</div>
+            </div>
+        </div>
+        <div class="col-md-3 inline-style" style="margin-left:50px;">
+         <div class="inline-style" style="padding: 2px;">
+            <label>Search</label>
+            <input type="search" style="width: 50px;">
+            <span class="input-group-append">
+             <i class="fa fa-search"></i>
+            </span>
+         </div>
+         <div class="inline-style cart col-md-1" style="padding: 5px;"(click)="login()" >Login</div>
+         <div class="inline-style cart col-md-1" style="padding: 5px;" (click)="cart()"  >Cart<img style="width: 20px;height: 20px;" src="/assets/cart.png"/></div>
+         <div class="inline-style cart col-md-1" style="background-color: red;border: 1px solid black;width: 20px; border-radius: 20px;"(click)="cart()">{{count}}</div>
+         <div class="inline-style cart col-md-1"  (click)="profile()" >User Profile</div>
+        </div>
+    </div>
+</div>

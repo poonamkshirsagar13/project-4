@@ -1,0 +1,13 @@
+.box-1{
+    height: 80px;
+    background-color:rgb(247, 233, 209);
+}
+.box-2{
+    background-color: azure;
+    padding:15px;
+
+}
+
+.total{
+    font-size:x-large;
+}

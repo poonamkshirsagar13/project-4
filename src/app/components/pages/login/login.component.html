@@ -1,0 +1,8 @@
+<p>login works!</p>
+<div class="row" style="background-color: greenyellow;">
+ <form [formGroup]="myForm" class="col-md-12">
+  <app-std-input [formInput]="input1" [control]="$any(myForm).controls[input1.control]"></app-std-input>
+  <app-std-input [formInput]="input2" [control]="$any(myForm).controls[input2.control]"></app-std-input>
+  <button class="button" (click)="login()">Enter</button>
+ </form>
+</div> 

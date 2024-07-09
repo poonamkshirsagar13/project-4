@@ -1,0 +1,13 @@
+<p>user-profile works!</p>
+<form [formGroup]="myForm" class="col-md-12" >
+    <div *ngFor="let input of formInputs">
+        <app-std-input class="sp-1" [formInput]="input" [control]="$any(myForm).controls[input.control]"></app-std-input>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <img id="imagePreview" style="width: 150px; height: 150px;" />
+    <div >
+     <button class="button-1" (click)="back()">Back</button>
+     <button class="button-2" (click)="save()">Save</button>
+    </div>
+</form>

@@ -1,0 +1,17 @@
+<p>sliver works!</p>
+<div *ngFor="let product of cardData" class="align">
+    <div class="card">
+        <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
+          <img src={{product.productImage}} class="img-fluid"/>
+          <div
+          >
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{product.productName}}</h5>
+          <p class="card-text">{{product.productDescription}}</p>
+          <div class="btn btn-primary"(click)="selectProduct(product.id)">$ {{product.price}}</div>
+        </div>
+    </div>  
+</div>
